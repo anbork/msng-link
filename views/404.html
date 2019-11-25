@@ -12,7 +12,7 @@ permalink: 404.html
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home page</a>...</p>
+    <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home page</a>........</p>
     <div id="button"></div>
     <script>
       function ready() {
@@ -45,7 +45,17 @@ permalink: 404.html
         }
 
         if (deeplink) {
-          window.location = deeplink;
+          //window.location = deeplink;
+
+          var addIFrame = function() {
+            var iframe = document.createElement("iframe");
+            iframe.style.border = "none";
+            iframe.style.width = "1px";
+            iframe.style.height = "1px";
+            iframe.src = deeplink;
+            document.body.appendChild(iframe);
+          };
+          addIFrame();
 
           let a = document.createElement('a');
           let linkText = document.createTextNode("Open");
