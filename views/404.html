@@ -13,26 +13,37 @@ permalink: 404.html
   <body>
     <h1>{{ title }}</h1>
     <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home page</a>.</p>
+    <div id="button"></div>
     <script>
       let url = new URL(window.location);
       let urlParts = url.pathname.split('/');
       let isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
+      let deeplink = null;
 
       switch(urlParts[1]) {
         case 'wa':
-          window.location = "whatsapp://send?phone=" + urlParts[2];
+          deeplink = "whatsapp://send?phone=" + urlParts[2];
           break;
         case 'vi':
           if (isMobile) {
-            window.location = "viber://add?number=" + urlParts[2];
+            deeplink = "viber://add?number=" + urlParts[2];
           } else {
-            window.location = "viber://chat?number=" + urlParts[2];
+            deeplink = "viber://chat?number=" + urlParts[2];
           }
           break;
         case 'tg':
-          window.location = "tg://resolve?domain=" + urlParts[2];
+          deeplink = "tg://resolve?domain=" + urlParts[2];
           break;
-      }      
+      }
+
+      if (deeplink) {
+        var a = document.createElement('a');
+        var linkText = document.createTextNode("Open");
+        a.appendChild(linkText);
+        a.title = 'messenger link';
+        a.href = deeplink;
+        document.getElementById('button').appendChild(a);
+      }
 
     </script>
   </body>
