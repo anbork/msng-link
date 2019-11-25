@@ -12,7 +12,7 @@ permalink: 404.html
   </head>
   <body>
     <h1>{{ title }}</h1>
-    <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home page</a>........</p>
+    <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home</a></p>
     <div id="button"></div>
     <script>
       function ready() {
@@ -25,12 +25,7 @@ permalink: 404.html
 
         switch(urlParts[1]) {
           case 'wa':
-            if (true) {
-              deeplink = `intent://send/${urlParts[2]}#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end`
-            } else {
-              deeplink = "whatsapp://send?phone=" + urlParts[2];
-            }
-            
+            deeplink = "whatsapp://send?phone=" + urlParts[2];
             break;
           case 'vi':
             if (isMobile) {
