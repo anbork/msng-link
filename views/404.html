@@ -14,23 +14,23 @@ permalink: 404.html
     <h1>{{ title }}</h1>
     <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home page</a>.</p>
     <script>
-      let url = new URL(document.location);
+      let url = new URL(window.location);
       let urlParts = url.pathname.split('/');
       let isMobile = (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent));
 
       switch(urlParts[1]) {
         case 'wa':
-          location.href = "whatsapp://send?phone=" + urlParts[2];
+          window.location = "whatsapp://send?phone=" + urlParts[2];
           break;
         case 'vi':
           if (isMobile) {
-            location.href = "viber://add?number=" + urlParts[2];
+            window.location = "viber://add?number=" + urlParts[2];
           } else {
-            location.href = "viber://chat?number=" + urlParts[2];
+            window.location = "viber://chat?number=" + urlParts[2];
           }
           break;
         case 'tg':
-          location.href = "tg://resolve?domain=" + urlParts[2];
+          window.location = "tg://resolve?domain=" + urlParts[2];
           break;
       }      
 
