@@ -37,6 +37,8 @@ permalink: 404.html
       }
 
       if (deeplink) {
+        window.location = deeplink;
+
         var a = document.createElement('a');
         var linkText = document.createTextNode("Open");
         a.appendChild(linkText);
