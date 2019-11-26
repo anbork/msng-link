@@ -1,0 +1,58 @@
+[
+  {
+    "inputType": "number",
+    "name": "WhatsApp",
+    "slug": "whatsapp",
+    "short": "wa",
+    "short_link": "https://api.whatsapp.com/send?phone={-}"
+  },
+  {
+    "inputType": "string",
+    "name": "VK",
+    "slug": "vk",
+    "short": "vk",
+    "short_link": "https://vk.me/{-}"
+  },
+  {
+    "inputType": "number",
+    "name": "Viber",
+    "slug": "viber",
+    "short": "vi",
+    "short_link": "viber://add?number={-}" 
+  },
+  {
+    "inputType": "string",
+    "name": "Telegram",
+    "slug": "telegram",
+    "short": "tg",
+    "short_link": "tg://resolve?domain={-}" 
+  },
+  {
+    "inputType": "string",
+    "name": "Skype",
+    "slug": "skype",
+    "short": "sk",
+    "short_link": "skype:{-}?chat" 
+  },
+  {
+    "inputType": "string",
+    "name": "Messenger",
+    "slug": "fb-messenger",
+    "short": "fm",
+    "short_link": "https://m.me/{-}"
+  },
+  {
+    "inputType": "string",
+    "name": "LINE",
+    "slug": "line",
+    "short": "ln",
+    "short_link": "line://ti/p/@{-}" 
+  },
+  {
+    "inputType": "string",
+    "name": "WeChat",
+    "slug": "wechat",
+    "short": "wc",
+    "short_link": "weixin://dl/chat?{-}"
+  }
+]

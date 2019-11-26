@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Generador de link para VK</title>
+  </head>
+  <body>
+    <h1>Generador de link para VK</h1>
+    <p>Puedes crear un simple link para Vk.com o generar un código HTML para tu página web.</p>
+
+    <script>
+      let messenger = {"inputType":"string","name":"VK","slug":"vk","short":"vk","short_link":"https://vk.me/{-}"};
+      let riotLocalize = {"label":"Introducir tu nombre de usuario de VK.com","placeholder":"Por ejemplo: Username o id123456","small":"¡No introducir tu Correo electrónico! Ve a Mi Perfil en Vk.com: el texto tu barra de direcciones del navegador (URL) después del vk.com/ es tu nombre de usuario","result":"Aquí está tu link para VK, cópialo y úsalo donde quieras","imageLink":"Envíame un mensaje en VK"};
+      let all_messengers = {"html_code":"Código del link HTML"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

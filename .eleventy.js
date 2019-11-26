@@ -13,10 +13,14 @@ module.exports = function(eleventyConfig) {
     }
   });
 
+  //eleventyConfig.addCollection("langs", require("./views/_languages/langs"));
+
   return {
     dir: {
-      input: "views",
-      output: "docs"
+      input: "src",
+      output: "docs",
+      data: "_data",
+      includes: "_includes"
     }
   };
 };

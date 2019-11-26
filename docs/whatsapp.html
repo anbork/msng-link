@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>WhatsApp Link Generator</title>
+  </head>
+  <body>
+    <h1>WhatsApp Link Generator</h1>
+    <p>You can create a simple WhatsApp link and add it to your Instagram profile or generate HTML code for your website.</p>
+
+    <script>
+      let messenger = {"inputType":"number","name":"WhatsApp","slug":"whatsapp","short":"wa","short_link":"https://api.whatsapp.com/send?phone={-}"};
+      let riotLocalize = {"label":"Enter your WhatsApp phone number (only digits)","placeholder":"For example: 15417543010","small":"Use only digits, don't use other characters or spaces","result":"Here is your link for WhatsApp, copy it and use where you want","imageLink":"Message me on WhatsApp"};
+      let all_messengers = {"html_code":"HTML link code"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

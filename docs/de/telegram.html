@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Telegram Link Generator</title>
+  </head>
+  <body>
+    <h1>Telegram Link Generator</h1>
+    <p>Sie können sowohl einen kurzen Telegram-Link erstellen als auch HTML-Code für Ihre Website generieren lassen.</p>
+
+    <script>
+      let messenger = {"inputType":"string","name":"Telegram","slug":"telegram","short":"tg","short_link":"tg://resolve?domain={-}"};
+      let riotLocalize = {"label":"Geben Sie Ihren Telegram-Benutzernamen ein","placeholder":"Beispiel: Username","result":"Hier ist Ihr Link für Telegram - einfach kopieren und nutzen, wo Sie wollen","imageLink":"Texten Sie mich auf Telegram an!"};
+      let all_messengers = {"html_code":"HTML Link Code"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

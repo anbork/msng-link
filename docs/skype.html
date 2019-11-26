@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Skype Link Generator</title>
+  </head>
+  <body>
+    <h1>Skype Link Generator</h1>
+    <p>You can create a simple Skype link or generate HTML code for your website.</p>
+
+    <script>
+      let messenger = {"inputType":"string","name":"Skype","slug":"skype","short":"sk","short_link":"skype:{-}?chat"};
+      let riotLocalize = {"label":"Enter your Skype login","placeholder":"Your login or email","result":"Here is your link for Skype, copy it and use where you want","imageLink":"Message me on Skype"};
+      let all_messengers = {"html_code":"HTML link code"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

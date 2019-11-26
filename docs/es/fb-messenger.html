@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Generador de link para el Facebook Messenger</title>
+  </head>
+  <body>
+    <h1>Generador de link para el Facebook Messenger</h1>
+    <p>Puedes crear un simple link para el Facebook Messenger o generar un código HTML para tu página web.</p>
+
+    <script>
+      let messenger = {"inputType":"string","name":"Messenger","slug":"fb-messenger","short":"fm","short_link":"https://m.me/{-}"};
+      let riotLocalize = {"label":"Introducir tu nombre de página de Facebook","placeholder":"El nombre de tu Pagina","result":"Aquí está tu link para el Facebook Messenger, cópialo y úsalo donde quieras","imageLink":"Envíame un mensaje en el Facebook Messenger "};
+      let all_messengers = {"html_code":"Código del link HTML"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

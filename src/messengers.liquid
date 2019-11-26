@@ -1,0 +1,33 @@
+---
+pagination:
+  data: messengersWithLang
+  size: 1
+  alias: data
+  addAllPagesToCollections: true
+permalink: "{{ data.lang.path }}{{ data.messenger.slug }}.html"
+---
+{%- assign messenger = data.messenger -%}
+{%- assign lang = data.lang -%}
+{%- assign localize = data.localize[messenger.slug] -%}
+{%- assign riotLocalize = data.localize.riot[messenger.slug] -%}
+<!doctype html>
+<html lang="{{ lang.symbol }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | url }}">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
+    <title>{{ localize.title }}</title>
+  </head>
+  <body>
+    <h1>{{ localize.title }}</h1>
+    <p>{{ localize.description }}</p>
+
+    <script>
+      let messenger = {{ messenger | json }};
+      let riotLocalize = {{ riotLocalize | json }};
+      let all_messengers = {{ data.localize.riot.all_messengers | json }};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

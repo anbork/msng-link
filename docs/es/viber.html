@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Generador de link para Viber</title>
+  </head>
+  <body>
+    <h1>Generador de link para Viber</h1>
+    <p>Puedes crear un simple link para Viber o generar un código HTML para tu página web.</p>
+
+    <script>
+      let messenger = {"inputType":"number","name":"Viber","slug":"viber","short":"vi","short_link":"viber://add?number={-}"};
+      let riotLocalize = {"label":"Introducir tu número de teléfono de Viber (Solo dígitos)","placeholder":"Por ejemplo: 15417543010","small":"Usar solo dígitos, por favor no usar otros caracteres o espacios","result":"Aquí esta tu link para Viber, cópialo y úsalo donde quieras","imageLink":"Envíame un mensaje en Viber"};
+      let all_messengers = {"html_code":"Código del link HTML"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+[
+  {
+    "symbol": "en",
+    "path": "",
+    "lang_name": "English2",
+    "write_to_me": "Message me"
+  },
+  {
+    "symbol": "ru",
+    "path": "/ru/",
+    "lang_name": "Русский",
+    "write_to_me": "Напишите мне"
+  },
+  {
+    "symbol": "de",
+    "path": "/de/",
+    "lang_name": "Deutsch",
+    "write_to_me": "Texten Sie mich an"
+  },
+  {
+    "symbol": "es",
+    "path": "/es/",
+    "lang_name": "Español",
+    "write_to_me": "Envíame un mensaje"
+  }
+]

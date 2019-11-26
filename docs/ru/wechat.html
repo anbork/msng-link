@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/css/main.css">
+    <title>Генератор ссылок для WeChat</title>
+  </head>
+  <body>
+    <h1>Генератор ссылок для WeChat</h1>
+    <p>Вы можете сделать простую ссылку для WeChat или сгенерировать HTML-код для вашего сайта.</p>
+
+    <script>
+      let messenger = {"inputType":"string","name":"WeChat","slug":"wechat","short":"wc","short_link":"weixin://dl/chat?{-}"};
+      let riotLocalize = {"label":"Введите ваш WeChat ID","placeholder":"WeChat ID из приложения","result":"Вот ссылка на ваш аккаунт в WeChat, скопируйте ее и используйте где угодно.","imageLink":"Напишите мне в WeChat"};
+      let all_messengers = {"html_code":"HTML-код со ссылкой"};
+      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+    </script>
+  </body>
+</html>
