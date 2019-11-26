@@ -8,21 +8,16 @@ permalink: "{{ data.lang.path }}generator/index.html"
 ---
 {%- assign lang = data.lang -%}
 {%- assign localize = data.localize -%}
+{%- assign title = data.localize.landing.title -%}
 <!doctype html>
 <html lang="{{ lang.symbol }}">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | url }}">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | url }}">
-    <title>{{ localize.landing.title }}</title>
-  </head>
-  <body>
-    <h1>{{ localize.landing.title }}</h1>
-    <p>{{ localize.landing.description }}</p>
+{% include head %}
+<body>
+  <h1>{{ title }}</h1>
+  <p>{{ localize.landing.description }}</p>
 
-    <script>
-      window.translations = {{ localize.riot }};
-    </script>
-  </body>
+  <script>
+    window.translations = {{ localize.riot }};
+  </script>
+</body>
 </html>

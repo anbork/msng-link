@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <title>Генератор ссылок для Skype</title>
-  </head>
-  <body>
-    <h1>Генератор ссылок для Skype</h1>
-    <p>Вы можете сделать простую ссылку для Скайпа или сгенерировать HTML-код для вашего сайта.</p>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<script src="/assets/js/share.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<title>Генератор ссылок для Skype</title>
+<body>
+  <h1>Генератор ссылок для Skype</h1>
+  <p>Вы можете сделать простую ссылку для Скайпа или сгенерировать HTML-код для вашего сайта.</p>
 
-    <script>
-      let messenger = {"inputType":"string","name":"Skype","slug":"skype","short":"sk","short_link":"skype:{-}?chat"};
-      let riotLocalize = {"label":"Введите ваш логин от Скайпа","placeholder":"Ваш логин или email","result":"Вот ссылка на ваш аккаунт в Скайпе, скопируйте ее и используйте где угодно.","imageLink":"Напишите мне в Skype"};
-      let all_messengers = {"html_code":"HTML-код со ссылкой"};
-      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
-    </script>
-  </body>
+  <script>
+    let messenger = {"inputType":"string","name":"Skype","slug":"skype","short":"sk","short_link":"skype:{-}?chat"};
+    let riotLocalize = {"label":"Введите ваш логин от Скайпа","placeholder":"Ваш логин или email","result":"Вот ссылка на ваш аккаунт в Скайпе, скопируйте ее и используйте где угодно.","imageLink":"Напишите мне в Skype"};
+    let all_messengers = {"html_code":"HTML-код со ссылкой"};
+    window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+  </script>
+</body>
 </html>

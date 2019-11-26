@@ -1,21 +1,23 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/main.css">
-    <title>Генератор ссылок для WhatsApp</title>
-  </head>
-  <body>
-    <h1>Генератор ссылок для WhatsApp</h1>
-    <p>Вы можете сделать простую ссылку для Ватсапа и добавить ее в свой профиль в Instagram или сгенерировать HTML-код для вашего сайта.</p>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<script src="/assets/js/share.js"></script>
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<title>Генератор ссылок для WhatsApp</title>
+<body>
+  <h1>Генератор ссылок для WhatsApp</h1>
+  <p>Вы можете сделать простую ссылку для Ватсапа и добавить ее в свой профиль в Instagram или сгенерировать HTML-код для вашего сайта.</p>
 
-    <script>
-      let messenger = {"inputType":"number","name":"WhatsApp","slug":"whatsapp","short":"wa","short_link":"https://api.whatsapp.com/send?phone={-}"};
-      let riotLocalize = {"label":"Введите ваш телефон для WhatsApp (только цифры)","placeholder":"Например: 79110123012","small":"Вводите только цифры - без пробелов и других символов!","result":"Вот ссылка на ваш аккаунт в WhatsApp, скопируйте ее и используйте где угодно.","imageLink":"Напишите мне в WhatsApp"};
-      let all_messengers = {"html_code":"HTML-код со ссылкой"};
-      window.translations = Object.assign(messenger, riotLocalize, all_messengers);
-    </script>
-  </body>
+  <script>
+    let messenger = {"inputType":"number","name":"WhatsApp","slug":"whatsapp","short":"wa","short_link":"https://api.whatsapp.com/send?phone={-}"};
+    let riotLocalize = {"label":"Введите ваш телефон для WhatsApp (только цифры)","placeholder":"Например: 79110123012","small":"Вводите только цифры - без пробелов и других символов!","result":"Вот ссылка на ваш аккаунт в WhatsApp, скопируйте ее и используйте где угодно.","imageLink":"Напишите мне в WhatsApp"};
+    let all_messengers = {"html_code":"HTML-код со ссылкой"};
+    window.translations = Object.assign(messenger, riotLocalize, all_messengers);
+  </script>
+</body>
 </html>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>/es/</loc>
+    <loc>/</loc>
     <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -13,13 +13,13 @@
     <priority></priority>
   </url>
   <url>
-    <loc>/ru/</loc>
+    <loc>/es/</loc>
     <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>
   <url>
-    <loc>/</loc>
+    <loc>/ru/</loc>
     <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -217,13 +217,13 @@
     <priority></priority>
   </url>
   <url>
-    <loc>/ru/generator/</loc>
+    <loc>/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>
   <url>
-    <loc>/es/generator/</loc>
+    <loc>/ru/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -235,7 +235,7 @@
     <priority></priority>
   </url>
   <url>
-    <loc>/generator/</loc>
+    <loc>/es/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
