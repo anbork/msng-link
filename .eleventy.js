@@ -1,4 +1,5 @@
 const fs = require("fs");
+const svgContents = require("eleventy-plugin-svg-contents");
 
 module.exports = function(eleventyConfig) {
   eleventyConfig.setBrowserSyncConfig({
@@ -13,7 +14,12 @@ module.exports = function(eleventyConfig) {
     }
   });
 
-  //eleventyConfig.addCollection("langs", require("./views/_languages/langs"));
+  eleventyConfig.addPlugin(svgContents);
+
+  eleventyConfig.addFilter('absoluteUrl', (url) => {
+    if (url == "/") url = "";
+    return `https://msng.link${url}`;
+  });
 
   return {
     dir: {

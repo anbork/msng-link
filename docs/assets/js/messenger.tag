@@ -30,7 +30,7 @@
     this.changeHandle = (event) => {
       this.messenger.value = event.target.value
       if (this.messenger.value) {
-        this.messenger.openLink = this.messenger.baseLink + "/" + this.messenger.short + "/" + this.messenger.value;
+        this.messenger.openLink = window.location.origin + "/" + this.messenger.short + "/" + this.messenger.value;
       }
       this.messenger.htmlLink = `<a href="${this.messenger.openLink}">${this.messenger.imageLink}</a>`      
     }

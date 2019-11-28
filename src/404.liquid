@@ -1,14 +1,16 @@
 ---
-title: MSNG.link is a tool for creating deeplink for any messenger application
 permalink: 404.html
 eleventyExcludeFromCollections: true
 ---
+{%- assign title = '404 title' -%}
+{%- assign description = '404 description' -%}
+
 <!doctype html>
 <html lang="en">
 {% include head %}
 <body>
   <h1>{{ title }}</h1>
-  <p>If you want to create your custom messenger link, welcome to <a href="{{ "/" | url }}">home</a></p>
+  <p>If you want to create your custom messenger link, welcome to <a href="{{ '/' | url }}">home</a></p>
   <div id="button"></div>
   <script>
     function ready() {
@@ -59,5 +61,7 @@ eleventyExcludeFromCollections: true
 
     document.addEventListener("DOMContentLoaded", ready);
   </script>
+
+{% include metrika %}  
 </body>
 </html>

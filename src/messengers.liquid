@@ -8,21 +8,65 @@ permalink: "{{ data.lang.path }}{{ data.messenger.slug }}.html"
 ---
 {%- assign messenger = data.messenger -%}
 {%- assign lang = data.lang -%}
-{%- assign localize = data.localize[messenger.slug] -%}
-{%- assign title = data.localize[messenger.slug].title -%}
-{%- assign riotLocalize = data.localize.riot[messenger.slug] -%}
+{%- assign localize = data.localize -%}
+{%- assign messengerLocalize = localize[messenger.slug] -%}
+{%- assign title = messengerLocalize.title -%}
+{%- assign description = messengerLocalize.description -%}
+{%- capture image -%}/assets/images/logos/{{ messenger.slug }}.png{%- endcapture -%}
+{%- assign riotLocalize = localize.riot[messenger.slug] -%}
+
 <!doctype html>
 <html lang="{{ lang.symbol }}">
 {% include head %}
 <body>
-  <h1>{{ title }}</h1>
-  <p>{{ localize.description }}</p>
+{% include header %}
 
-  <script>
-    let messenger = {{ messenger | json }};
-    let riotLocalize = {{ riotLocalize | json }};
-    let all_messengers = {{ data.localize.riot.all_messengers | json }};
-    window.translations = Object.assign(messenger, riotLocalize, all_messengers);
-  </script>
+
+<div class="container">
+  <section class="">
+    {% include messengers_list %}
+
+    <div class="messenger-container">
+      <messenger type="{{ messenger.slug }}">
+        <div class="form-group">
+            <label>{{ riotLocalize.label }}</label>
+            <div class="form-row">
+                <div class="col">
+                    <input type="{{ messenger.inputType }}" name="messenger" class="form-control" placeholder="{{ riotLocalize.placeholder }}" onchange={changeHandle} />
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary">
+                        <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                    </button>
+                </div>
+            </div>       
+            <small class="form-text text-muted">{{ riotLocalize.small }}</small> 
+        </div>    
+      </messenger>
+    </div>
+
+    <div class="text-center mt-4">
+      <p class="lead">{{ description }}</p>
+    </div>
+  </section>
+</div>
+
+<script>
+  let messenger = {{ messenger | json }};
+  let riotLocalize = {{ riotLocalize | json }};
+  let all_pages = {{ localize.all_pages | json }};
+  
+  window.translations = Object.assign(messenger, riotLocalize, all_pages);
+</script>
+
+<script src="/assets/js/clipboard.min.js"></script>
+<script type="riot/tag" src="/assets/js/messenger.tag"></script>
+<!-- include riot.js -->
+<script src="/assets/js/riot-compiler.min.js"></script>
+<!-- mount the tag -->
+<script>riot.mount('messenger')</script>   
+
+{% include footer %}
+{% include metrika %}    
 </body>
 </html>

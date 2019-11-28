@@ -1,0 +1,43 @@
+<ul class="list-inline text-center mt-3 mb-1">
+  {%- assign homeLink = lang.path -%}
+  <li class="list-inline-item {% if page.url == homeLink -%}active-menu-item{%- endif %}">
+    <a href="{{ homeLink }}">{{ localize.all_pages.home_link_name }}</a> 
+  </li>
+  &bull;&nbsp;
+  {%- assign generatorLink = lang.path | append: 'generator/' -%}
+  <li class="list-inline-item {% if page.url == generatorLink -%}active-menu-item{%- endif %}">
+    <a href="{{ generatorLink }}">{{ localize.all_pages.page_generator_link_name }}</a> 
+  </li>  
+  &bull;&nbsp;
+  {%- assign contactsLink = lang.path | append: 'contacts/' -%}
+  <li class="list-inline-item {% if page.url == contactsLink -%}active-menu-item{%- endif %}">
+    <a href="{{ contactsLink }}">{{ localize.all_pages.contacts_link_name }}</a> 
+  </li> 
+</ul>
+
+
+<table width="100%">
+  <tr>
+    <td align="center" style="text-align: center;">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- msng -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-4829143066979666"
+          data-ad-slot="2894898797"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+      <script>
+      (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </td>
+  </tr>
+</table>
+
+<div class="header-container">
+    <div class="container">
+        <header class="header text-center mt-3">
+            <h1>{{ title }}</h1>
+        </header>
+    </div>
+</div>

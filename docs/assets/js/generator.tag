@@ -33,7 +33,7 @@
       </div>
     </div>
     <div class="text-center mt-4">
-        <p><a href={home_link + "/contacts"}>{translations['write_me']}</a></p>
+        <p><a href={home_link + "/contacts/"}>{translations['write_me']}</a></p>
     </div>  
     <div class="text-center pt-3">
       <div class="my-1"></div>
@@ -74,7 +74,7 @@
           var value = parameters[key];
           array.push(key + "=" + value);
         });
-        this.generatedLink = this.translations.website + "/o?" + array.join("&");
+        this.generatedLink = window.location.origin + "/o?" + array.join("&");
         this.step = 3; 
       }
     }

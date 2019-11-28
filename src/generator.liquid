@@ -9,15 +9,57 @@ permalink: "{{ data.lang.path }}generator/index.html"
 {%- assign lang = data.lang -%}
 {%- assign localize = data.localize -%}
 {%- assign title = data.localize.landing.title -%}
+{%- assign description = data.localize.landing.description -%}
+{%- assign image = '/assets/images/logos/home.png' -%}
+
 <!doctype html>
 <html lang="{{ lang.symbol }}">
 {% include head %}
 <body>
-  <h1>{{ title }}</h1>
-  <p>{{ localize.landing.description }}</p>
+{% include header %}
 
-  <script>
-    window.translations = {{ localize.riot }};
-  </script>
+<div class="container">
+  <section class="">
+
+    <div class="text-center pt-1">
+      <p>{{ description }}</p>
+    </div>     
+    <generator>
+      <div class="text-center">
+        <h4>{{ localize.landing.check_messengers }}</h4>
+      </div>        
+      {% include messengers_list %}
+      <div class="text-center">
+        <button onclick={goToStep2} class="btn btn-primary">{{ localize.landing.next }}</button>
+      </div>
+    </generator>
+
+  </section>
+  <br />
+</div>
+
+<script>
+  let riotLocalize = {{ localize.riot | json }};
+  let landing = {{ localize.landing | json }};
+  let all_pages = {{ localize.all_pages | json }};
+  let messengers_data = {{ messengers | json }};
+  Object.keys(riotLocalize).forEach(messenger => {
+    if (messengers_data[messenger]) {
+      riotLocalize[messenger] = Object.assign(riotLocalize[messenger], messengers_data[messenger]);
+    }
+  });
+
+  window.translations = Object.assign(riotLocalize, landing, all_pages);  
+</script>
+
+<script src="/assets/js/clipboard.min.js"></script>
+<script type="riot/tag" src="/assets/js/generator.tag"></script>
+<!-- include riot.js -->
+<script src="/assets/js/riot-compiler.min.js"></script>
+<!-- mount the tag -->
+<script>riot.mount('generator')</script>   
+
+{% include footer %}
+{% include metrika %}  
 </body>
 </html>

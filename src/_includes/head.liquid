@@ -3,7 +3,16 @@
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
 <link rel="stylesheet" href="/assets/css/main.css">
-<script src="/assets/js/share.js"></script>
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
 <title>{{ title }}</title>
+<meta name="description" content="{{ description }}" />
+<meta name="twitter:card" value="{{ description }}">
+<meta property="og:title" content="{{ title }}" />
+{% unless page.url contains '404' -%}
+  <meta property="og:url" content="{{ page.url | absoluteUrl }}" />
+{%- endunless %}
+{% if image -%}
+  <meta property="og:image" content="{{ image | absoluteUrl }}" />
+{%- endif %}
+<meta property="og:description" content="{{ description }}" />

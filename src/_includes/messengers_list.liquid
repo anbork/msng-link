@@ -1,0 +1,29 @@
+<div class="messenger-container">
+<div class="row mb-3 justify-content-center messengers-menu">
+  {% for messengersGroup in messengersGroups %}
+    {% for messenger in messengersGroup %}
+      {%- capture msngImage -%}/src/svg/{{ messenger.slug }}.svg{%- endcapture -%}
+      {%- assign msngLink = lang.path | append: messenger.slug | append: '.html' -%}
+      <div class="text-center messengers-menu__item col-3 {% if page.url == msngLink -%}active-menu-item{%- endif %}">
+        {% if page.url contains 'generator' %}
+          <label class="card-link lead d-inline-block cursor-pointer" for="{{ messenger.slug }}"> 
+            {{ messenger.name }}<br />
+            <div class="nowrap">
+              <input type="checkbox" onchange={checkMessenger} value="{{ messenger.slug }}" id="{{ messenger.slug }}">
+              {{ msngImage | svgContents }}
+            </div>
+          </label>
+        {% else %}
+          <a href="{{ msngLink }}" class="card-link lead d-inline-block"> 
+            {{ messenger.name }}<br />
+            {{ msngImage | svgContents }}
+          </a>        
+        {% endif %}   
+      </div>
+
+
+    {% endfor %} 
+  {% endfor %} 
+
+</div> 
+</div>

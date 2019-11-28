@@ -1,0 +1,23 @@
+<hr />
+<footer class="footer">
+  <div class="share-btn text-center" data-url="{{ page.url | absoluteUrl }}" data-title="{{ title }}" data-desc="{{ description }}">
+    {{localize.all_pages.share}}:
+  
+    {% for social in lang.socmed %}
+      <a class="social-link" data-id="{{ social }}">
+        <svg width="30" height="30" class="social-logo {{ social }}">
+          <use xlink:href="/assets/images/logos/social-logos.svg#{{ social }}"></use>
+        </svg>
+      </a>  
+    {% endfor %}    
+  </div>
+</footer>
+<script src="/assets/js/share-buttons.js"></script>
+
+<div class="text-center mt-4">
+  {% for dataLang in languages %}
+    <span class="lang-menu-item {% if lang.path == dataLang.lang.path -%}active-menu-item{%- endif %}">
+      <a href="{{ dataLang.lang.path }}">{{ dataLang.lang.lang_name }}</a> 
+    </span>
+  {% endfor %} 
+</div>
