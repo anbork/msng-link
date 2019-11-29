@@ -61,7 +61,7 @@
     "name": "Messenger",
     "slug": "fb-messenger",
     "short": "fm",
-    "short_link": "fb-messenger-public://user-thread/{-}"
+    "short_link": "https://m.me/{-}"
   },
   {
     "inputType": "string",

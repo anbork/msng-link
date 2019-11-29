@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://msng.link/es/</loc>
+    <loc>https://msng.link</loc>
     <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -19,13 +19,31 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link</loc>
+    <loc>https://msng.link/es/</loc>
     <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/es/fb-messenger.html</loc>
+    <loc>https://msng.link/ru/wechat.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/line.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/fb-messenger.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/skype.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -140,6 +158,12 @@
   </url>
   <url>
     <loc>https://msng.link/es/skype.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/es/fb-messenger.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -265,43 +289,7 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/ru/skype.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/ru/fb-messenger.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/ru/line.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/ru/wechat.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
     <loc>https://msng.link/generator/</loc>
-    <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/ru/generator/</loc>
-    <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/de/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -313,8 +301,14 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/es/contacts/</loc>
-    <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <loc>https://msng.link/de/generator/</loc>
+    <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/generator/</loc>
+    <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>
@@ -326,6 +320,12 @@
   </url>
   <url>
     <loc>https://msng.link/de/contacts/</loc>
+    <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/es/contacts/</loc>
     <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
