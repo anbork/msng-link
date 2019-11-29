@@ -1,12 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://msng.link</loc>
-    <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
     <loc>https://msng.link/es/</loc>
     <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
@@ -25,7 +19,61 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/de/skype.html</loc>
+    <loc>https://msng.link</loc>
+    <lastmod>Sun Nov 24 2019 15:23:19 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/es/fb-messenger.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/whatsapp.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/vk.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/viber.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/telegram.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/tiktok.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/instagram.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/snapchat.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/skype.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -73,13 +121,25 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/es/skype.html</loc>
+    <loc>https://msng.link/es/tiktok.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/es/fb-messenger.html</loc>
+    <loc>https://msng.link/es/instagram.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/es/snapchat.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/es/skype.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -121,7 +181,25 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/vk.html</loc>
+    <loc>https://msng.link/de/tiktok.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/de/instagram.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/de/snapchat.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/de/skype.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -169,6 +247,24 @@
     <priority></priority>
   </url>
   <url>
+    <loc>https://msng.link/ru/tiktok.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/instagram.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/snapchat.html</loc>
+    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
     <loc>https://msng.link/ru/skype.html</loc>
     <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
@@ -193,37 +289,13 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/whatsapp.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/viber.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/telegram.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
-    <loc>https://msng.link/skype.html</loc>
-    <lastmod>Mon Nov 25 2019 19:39:18 GMT+0200 (RTZ 1 (зима))</lastmod>
-    <changefreq></changefreq>
-    <priority></priority>
-  </url>
-  <url>
     <loc>https://msng.link/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/es/generator/</loc>
+    <loc>https://msng.link/ru/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
@@ -235,8 +307,32 @@
     <priority></priority>
   </url>
   <url>
-    <loc>https://msng.link/ru/generator/</loc>
+    <loc>https://msng.link/es/generator/</loc>
     <lastmod>Tue Nov 26 2019 08:47:11 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/es/contacts/</loc>
+    <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/ru/contacts/</loc>
+    <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/de/contacts/</loc>
+    <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
+    <changefreq></changefreq>
+    <priority></priority>
+  </url>
+  <url>
+    <loc>https://msng.link/contacts/</loc>
+    <lastmod>Thu Nov 28 2019 16:06:51 GMT+0200 (RTZ 1 (зима))</lastmod>
     <changefreq></changefreq>
     <priority></priority>
   </url>

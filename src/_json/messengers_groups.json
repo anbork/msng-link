@@ -2,13 +2,18 @@
   [
     "whatsapp",
     "fb-messenger",
-    "wechat",
-    "skype"
+    "tiktok"
   ],
   [
+    "instagram",
     "telegram",
     "viber",
-    "vk",
+    "vk"
+  ],
+  [
+    "snapchat",
+    "wechat",
+    "skype",
     "line"
   ]
 ]

@@ -44,6 +44,18 @@
     "title": "Telegram Link Generator",
     "description": "You can create a simple Telegram link or generate HTML code for your website."
   },
+  "instagram": {
+    "title": "Instagram Link Generator",
+    "description": "You can create a simple Instagram link or generate HTML code for your website."
+  },
+  "tiktok": {
+    "title": "TikTok Link Generator",
+    "description": "You can create a simple TikTok link or generate HTML code for your website."
+  },
+  "snapchat": {
+    "title": "Snapchat Link Generator",
+    "description": "You can create a simple Snapchat link or generate HTML code for your website."
+  },
   "skype": {
     "title": "Skype Link Generator",
     "description": "You can create a simple Skype link or generate HTML code for your website."
@@ -102,6 +114,24 @@
       "placeholder": "For example: Username",
       "result": "Here is your link for Telegram, copy it and use where you want",
       "imageLink": "Message me on Telegram"
+    },
+    "instagram": {
+      "label": "Enter your Instagram login",
+      "placeholder": "For example: Username",
+      "result": "Here is your link for Instagram, copy it and use where you want",
+      "imageLink": "Message me on Instagram"
+    },
+    "tiktok": {
+      "label": "Enter your TikTok login",
+      "placeholder": "For example: Username",
+      "result": "Here is your link for TikTok, copy it and use where you want",
+      "imageLink": "Message me on TikTok"
+    },
+    "snapchat": {
+      "label": "Enter your Snapchat login",
+      "placeholder": "For example: Username",
+      "result": "Here is your link for Snapchat, copy it and use where you want",
+      "imageLink": "Message me on Snapchat"
     },
     "vk": {
       "label": "Enter your VK.com user name",

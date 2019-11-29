@@ -4,21 +4,22 @@
     "name": "WhatsApp",
     "slug": "whatsapp",
     "short": "wa",
-    "short_link": "https://api.whatsapp.com/send?phone={-}"
+    "short_link": "whatsapp://send?phone={-}"
   },
   {
     "inputType": "string",
     "name": "VK",
     "slug": "vk",
     "short": "vk",
-    "short_link": "https://vk.me/{-}"
+    "short_link": "vk://vk.com/{-}"
   },
   {
     "inputType": "number",
     "name": "Viber",
     "slug": "viber",
     "short": "vi",
-    "short_link": "viber://add?number={-}" 
+    "short_link": "viber://add?number={-}" ,
+    "desktop_short_link": "viber://chat?number={-}"
   },
   {
     "inputType": "string",
@@ -26,6 +27,27 @@
     "slug": "telegram",
     "short": "tg",
     "short_link": "tg://resolve?domain={-}" 
+  },
+  {
+    "inputType": "string",
+    "name": "TikTok",
+    "slug": "tiktok",
+    "short": "tt",
+    "short_link": "https://www.tiktok.com/@{-}" 
+  },
+  {
+    "inputType": "string",
+    "name": "Instagram",
+    "slug": "instagram",
+    "short": "ig",
+    "short_link": "instagram://user?username={-}" 
+  },
+  {
+    "inputType": "string",
+    "name": "Snapchat",
+    "slug": "snapchat",
+    "short": "sc",
+    "short_link": "https://www.snapchat.com/add/{-}" 
   },
   {
     "inputType": "string",
@@ -39,7 +61,7 @@
     "name": "Messenger",
     "slug": "fb-messenger",
     "short": "fm",
-    "short_link": "https://m.me/{-}"
+    "short_link": "fb-messenger-public://user-thread/{-}"
   },
   {
     "inputType": "string",

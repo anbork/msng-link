@@ -74,7 +74,7 @@
           var value = parameters[key];
           array.push(key + "=" + value);
         });
-        this.generatedLink = window.location.origin + "/o?" + array.join("&");
+        this.generatedLink = window.location.origin + "/o/?" + array.join("&");
         this.step = 3; 
       }
     }

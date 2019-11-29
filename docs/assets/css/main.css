@@ -20,6 +20,11 @@ h1 {
     font-size: 36px;
 }
 
+.messengers-menu__item svg {
+    width: 50px;
+    height: 50px;
+}
+
 .msg-page h1 {
     font-size: 25px;
     padding-top: 20px;
@@ -29,11 +34,16 @@ h1 {
     background: #eee;
 }
 .msg-page .container {
+    text-align: center;
     margin-top: 20px;
+}
+.msg-page #row-messengers {
     background: #fff;
     border-radius: 10px;
     max-width: 400px;
-    width: 90%;
+    display: inline-block;
+    margin: 0 auto;
+    padding: 5px 25px 10px;
 }
 .msg-page .messengers-menu__item{
     padding: 15px 0 18px 0 !important;

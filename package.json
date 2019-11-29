@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "npx eleventy --serve",
-    "watch": "npx eleventy --watch",
-    "build": "npx eleventy"
+    "start": "npm run svg && npx eleventy --serve",
+    "watch": "npm run svg && npx eleventy --watch",
+    "build": "npm run svg && npx eleventy",
+    "svg": "svg2sprite src/svg src/sprites/messengers.svg --inline"
   },
   "keywords": [],
   "author": "",

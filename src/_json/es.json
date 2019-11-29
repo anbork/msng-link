@@ -40,6 +40,18 @@
     "title": "Generador de link para Telegram",
     "description": "Puedes crear un simple link para Telegram o generar un código HTML para tu página web."
   },
+  "instagram": {
+    "title": "Generador de link para Instagram",
+    "description": "Puedes crear un simple link para Instagram o generar un código HTML para tu página web."
+  },
+  "tiktok": {
+    "title": "Generador de link para TikTok",
+    "description": "Puedes crear un simple link para TikTok o generar un código HTML para tu página web."
+  },
+  "snapchat": {
+    "title": "Generador de link para Snapchat",
+    "description": "Puedes crear un simple link para Snapchat o generar un código HTML para tu página web."
+  },
   "skype": {
     "title": "Generador de link para Skype",
     "description": "Puedes crear un simple link para Skype o generar un código HTML para tu página web."
@@ -99,6 +111,24 @@
       "placeholder": "Por ejemplo: Username",
       "result": "Aquí esta tu link para Telegram, cópialo y úsalo donde quieras",
       "imageLink": "Envíame un mensaje en Telegram"
+    },
+    "instagram": {
+      "label": "Introducir tu nombre de usuario de Instagram",
+      "placeholder": "Por ejemplo: Username",
+      "result": "Aquí esta tu link para Instagram, cópialo y úsalo donde quieras",
+      "imageLink": "Envíame un mensaje en Instagram"
+    },
+    "tiktok": {
+      "label": "Introducir tu nombre de usuario de TikTok",
+      "placeholder": "Por ejemplo: Username",
+      "result": "Aquí esta tu link para TikTok, cópialo y úsalo donde quieras",
+      "imageLink": "Envíame un mensaje en TikTok"
+    },
+    "snapchat": {
+      "label": "Introducir tu nombre de usuario de Snapchat",
+      "placeholder": "Por ejemplo: Username",
+      "result": "Aquí esta tu link para Snapchat, cópialo y úsalo donde quieras",
+      "imageLink": "Envíame un mensaje en Snapchat"
     },
     "vk": {
       "label": "Introducir tu nombre de usuario de VK.com",

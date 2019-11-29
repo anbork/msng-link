@@ -39,6 +39,18 @@
     "title": "Telegram Link Generator",
     "description": "Sie können sowohl einen kurzen Telegram-Link erstellen als auch HTML-Code für Ihre Website generieren lassen."
   },
+  "instagram": {
+    "title": "Instagram Link Generator",
+    "description": "Sie können sowohl einen kurzen Instagram-Link erstellen als auch HTML-Code für Ihre Website generieren lassen."
+  },
+  "tiktok": {
+    "title": "TikTok Link Generator",
+    "description": "Sie können sowohl einen kurzen TikTok-Link erstellen als auch HTML-Code für Ihre Website generieren lassen."
+  },
+  "snapchat": {
+    "title": "Snapchat Link Generator",
+    "description": "Sie können sowohl einen kurzen Snapchat-Link erstellen als auch HTML-Code für Ihre Website generieren lassen."
+  },
   "skype": {
     "title": "Skype Link Generator",
     "description": "Sie können sowohl einen kurzen Skype-Link erstellen als auch HTML-Code für Ihre Website generieren lassen."
@@ -97,6 +109,24 @@
       "placeholder": "Beispiel: Username",
       "result": "Hier ist Ihr Link für Telegram - einfach kopieren und nutzen, wo Sie wollen",
       "imageLink": "Texten Sie mich auf Telegram an!"
+    },
+    "instagram": {
+      "label": "Geben Sie Ihren Instagram-Benutzernamen ein",
+      "placeholder": "Beispiel: Username",
+      "result": "Hier ist Ihr Link für Instagram - einfach kopieren und nutzen, wo Sie wollen",
+      "imageLink": "Texten Sie mich auf Instagram an!"
+    },
+    "tiktok": {
+      "label": "Geben Sie Ihren TikTok-Benutzernamen ein",
+      "placeholder": "Beispiel: Username",
+      "result": "Hier ist Ihr Link für TikTok - einfach kopieren und nutzen, wo Sie wollen",
+      "imageLink": "Texten Sie mich auf TikTok an!"
+    },
+    "snapchat": {
+      "label": "Geben Sie Ihren Snapchat-Benutzernamen ein",
+      "placeholder": "Beispiel: Username",
+      "result": "Hier ist Ihr Link für Snapchat - einfach kopieren und nutzen, wo Sie wollen",
+      "imageLink": "Texten Sie mich auf Snapchat an!"
     },
     "vk": {
       "label": "Geben Sie Ihren Benutzernamen bei Vkontakte ein",
