@@ -8,15 +8,19 @@
         {% if page.url contains 'generator' %}
           <label class="card-link lead d-inline-block cursor-pointer" for="{{ messenger.slug }}"> 
             {{ messenger.name }}<br />
-            <div class="nowrap">
-              <input type="checkbox" onchange={checkMessenger} value="{{ messenger.slug }}" id="{{ messenger.slug }}">
-              {{ msngImage | svgContents }}
+            <div class="nowrap d-flex align-content-center">
+              <input class="mr-1 my-auto" type="checkbox" onchange={checkMessenger} value="{{ messenger.slug }}" id="{{ messenger.slug }}">
+              <div class="d-inline-block {{ messenger.slug }}-bg">
+                {{ msngImage | svgContents }}
+              </div>
             </div>
           </label>
         {% else %}
           <a href="{{ msngLink }}" class="card-link lead d-inline-block"> 
             {{ messenger.name }}<br />
-            {{ msngImage | svgContents }}
+            <div class="d-inline-block {{ messenger.slug }}-bg">
+              {{ msngImage | svgContents }}
+            </div>
           </a>        
         {% endif %}   
       </div>

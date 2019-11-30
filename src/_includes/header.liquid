@@ -16,7 +16,7 @@
 </ul>
 
 
-<table width="100%">
+<table width="100%" id="ggl-header">
   <tr>
     <td align="center" style="text-align: center;">
       <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
@@ -27,9 +27,11 @@
           data-ad-slot="2894898797"
           data-ad-format="auto"
           data-full-width-responsive="true"></ins>
-      <script>
-      (adsbygoogle = window.adsbygoogle || []).push({});
-      </script>
+      {% unless isHome %}
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+      {% endunless %}
     </td>
   </tr>
 </table>

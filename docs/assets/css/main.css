@@ -9,7 +9,8 @@
     font-size: 17px;
 }
 .container .card-link svg {
-    width: 40px;
+    width: 50px;
+    height: 50px;
 }
 
 .messengers-menu .messengers-menu__item {
@@ -32,12 +33,13 @@ h1 {
 }
 .msg-page {
     background: #eee;
+    min-height: 100vh;
 }
 .msg-page .container {
     text-align: center;
     margin-top: 20px;
 }
-.msg-page #row-messengers {
+.msg-page .white-bg-msng {
     background: #fff;
     border-radius: 10px;
     max-width: 400px;
@@ -45,6 +47,27 @@ h1 {
     margin: 0 auto;
     padding: 5px 25px 10px;
 }
+
+.msg-page .has-1-messengers {
+    background: none;
+    position: relative;
+    top: -20px;
+}
+.msg-page .has-1-messengers svg {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+.msg-page .has-1-messengers small {
+    position: absolute; 
+    bottom: -20px;
+    color: #000 !important;
+    font-size: 18px !important;
+    width: 100%;
+    left: 0;
+    text-align: center;
+}
+
 .msg-page .messengers-menu__item{
     padding: 15px 0 18px 0 !important;
 }
@@ -200,4 +223,35 @@ blockquote cite {
 }
 .lang-menu-item:first-child:before {
     content: none;
+}
+
+.instagram-bg {
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    border-radius: 8px;
+}
+.tiktok-bg {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+#is-home .msng-link {
+    display: none;
+}
+#is-home .messengers-content + .msng-link {
+    display: block;
+}
+
+body {
+    animation: 0.5s fadeIn;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+  
+@keyframes fadeIn {
+    5% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }

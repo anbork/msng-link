@@ -11,27 +11,42 @@ permalink: "{{ data.lang.path }}index.html"
 {%- assign title = localize.home.title -%}
 {%- assign description = localize.home.description -%}
 {%- assign image = '/assets/images/logos/home.png' -%}
+{%- assign isHome = true -%}
 
 <!doctype html>
 <html lang="{{ lang.symbol }}">
 {% include head %}
-<body>
-{% include header %}
-
-<div class="container">
+<body id="is-home">
+<div id="content-wrapper">
+  {% include header %}
+  <div class="container">
     <section class="">
-        {% include messengers_list %}
-        <div class="text-center pt-1">
-            <h4 class="mb-3">
-              {{ localize.home.home_h3 }}
-            </h4>
-            <p>{{ localize.home.paragraph1 }}</p>
-            <p>{{ description }}</p>
-        </div>
+      {% include messengers_list %}
+      <div class="text-center pt-1">
+        <h4 class="mb-3">
+          {{ localize.home.home_h3 }}
+        </h4>
+        <p>{{ localize.home.paragraph1 }}</p>
+        <p>{{ description }}</p>
+      </div>
     </section>
+  </div>
+  {% include footer %}
 </div>
 
-{% include footer %}
+<div class="msng-link">
+  <a href="{{ '/' | absoluteUrl }}">
+    {{ '/' | absoluteUrl | remove: "https://" }}
+  </a>
+</div>
+
+
+<div class="d-none">
+  {{ '/src/sprites/messengers.svg' | svgContents }}
+</div>
+
+{% include messengers_js %}
+
 {% include metrika %}    
 </body>
 </html>

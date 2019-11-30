@@ -10,74 +10,30 @@ eleventyExcludeFromCollections: true
 
 
 <!doctype html>
-<html lang="{{ lang.symbol }}">
+<html lang="en">
 {% include head %}
-<body class="msg-page">
-<h1 class="text-center pb-0" id="h1">{{ lang.write_to_me }}</h1>
-<div class="container">
-  <div class="text-center" id="row-messengers">
+<body>
+<div id="content-wrapper">
+  <h1 class="text-center pb-0" id="h1">{{ lang.write_to_me }}</h1>
+  <div class="container">
+    <div class="text-center white-bg-msng" id="row-messengers">
+      <a href="/generator/">{{description}}</a>
+    </div>
   </div>
 </div>
+
 <div class="msng-link">
   <a href="{{ '/' | absoluteUrl }}">
     {{ '/' | absoluteUrl | remove: "https://" }}
   </a>
 </div>
 
-{{ '/src/sprites/messengers.svg' | svgContents }}
+<div class="d-none">
+  {{ '/src/sprites/messengers.svg' | svgContents }}
+</div>
 
-<script type="text/javascript">
-  var messengers = {{ messengers }};
-  window.translations = {};
-  Object.keys(messengers).forEach(function(key){
-    var msng = messengers[key];
-    window.translations[msng.short] = msng;
-  })
-  var userLang = navigator.language || navigator.userLanguage;
-  userLang = userLang.substring(0, 2);
-  if (['ru', 'en', 'es', 'de'].indexOf(userLang) < 0) userLang = 'en'
-  var langsList = {{ languages | map: 'lang' }};
-  var userH1 = langsList.find(lang => lang.symbol == userLang);
-  if (userH1) {
-      document.getElementById("h1").innerHTML = userH1.write_to_me;
-  }
 
-  var msngValues = {};
-
-  var search = location.search.substring(1);
-  if (search.length > 3) {
-    var searchObj = JSON.parse('{"' + decodeURI(search).replace(/"/g, '\\"').replace(/&/g, '","').replace(/=/g,'":"') + '"}')
-    Object.keys(searchObj).forEach(function(val) {
-      var msng = searchObj[val];
-      var splittedMsng = msng.match(/.{1,2}/g);
-      splittedMsng.forEach(function(sm) {
-        msngValues[sm] = val;
-      })
-    })
-  }
-  
-  var html = "";
-  Object.keys(msngValues).forEach(function(msng) {
-    if (!window.translations[msng]) return false;
-    var value = msngValues[msng];
-    html += `
-<a href="${ window.translations[msng].short_link.replace('{-}', value) }" class="d-inline-block my-2 mx-1" target="_blank">
-  <small style="white-space:nowrap;">${ window.translations[msng].name }</small><br />
-  <svg width="50" height="50">
-    <use href="#${ window.translations[msng].slug }" />
-  </svg>
-</a>
-`
-  });
-
-  var rowMessengers = document.getElementById('row-messengers');
-  rowMessengers.innerHTML = html;
-
-  if (html.length < 1) {
-    rowMessengers.innerHTML = '<a href="/generator/">{{description}}</a>';
-  }
-</script>
-
+{% include messengers_js %}
 {% include metrika %}    
 </body>
 </html>
