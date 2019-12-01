@@ -1,0 +1,51 @@
+{%- assign data = languages[0] -%}
+{%- assign lang = data.lang -%}
+{%- assign localize = data.localize -%}
+{%- assign title = data.localize.all_pages.contacts_link_name -%}
+{%- assign description = data.localize.all_pages.page_generator_link_name -%}
+{%- assign image = '/assets/images/logos/home.png' -%}
+
+<!doctype html>
+<html lang="{{ lang.symbol }}">
+{% include head %}
+<body>
+{% include header %}
+
+<div class="container">
+  <section class="">
+    <input type="file" id="imageWechat" />
+
+  </section> 
+</div>
+
+<script src="/assets/js/jsQR.js"></script>
+<script>
+var imageWechat = document.getElementById('imageWechat');
+var _URL = window.URL || window.webkitURL;
+imageWechat.addEventListener('change', function(event) {
+  var file, img;
+  if ((file = this.files[0])) {
+      img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+
+        canvas.width = img.width;
+        canvas.height = img.height;
+        context.drawImage(img, 0, 0);
+
+        try {
+          const imageData = context.getImageData(0, 0, img.width, img.height);
+
+          const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+          console.log(qrCode);
+        } catch (e) {
+          console.log(e);
+        }
+      };
+      img.src = _URL.createObjectURL(file);
+  }
+});
+</script>
+</body>
+</html>

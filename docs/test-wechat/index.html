@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<link rel="stylesheet" href="/assets/css/bootstrap.min.css">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
+<title>Message me</title>
+<meta name="description" content="Create a contact page" />
+<meta name="twitter:card" value="Create a contact page">
+<meta property="og:title" content="Message me" />
+<meta property="og:url" content="https://msng.link/test-wechat/" />
+<meta property="og:image" content="https://msng.link/assets/images/logos/home.png" />
+<meta property="og:description" content="Create a contact page" />
+<body>
+<ul class="list-inline text-center mt-3 mb-1"><li class="list-inline-item ">
+    <a href="/">Home</a> 
+  </li>
+  &bull;&nbsp;<li class="list-inline-item ">
+    <a href="/generator/">Create a contact page</a> 
+  </li>  
+  &bull;&nbsp;<li class="list-inline-item ">
+    <a href="/contacts/">Message me</a> 
+  </li> 
+</ul>
+
+
+<table width="100%" id="ggl-header">
+  <tr>
+    <td align="center" style="text-align: center;">
+      <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+      <!-- msng -->
+      <ins class="adsbygoogle"
+          style="display:block"
+          data-ad-client="ca-pub-4829143066979666"
+          data-ad-slot="2894898797"
+          data-ad-format="auto"
+          data-full-width-responsive="true"></ins>
+        <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+        </script>
+    </td>
+  </tr>
+</table>
+
+<div class="header-container">
+    <div class="container">
+        <header class="header text-center mt-3">
+            <h1>Message me</h1>
+        </header>
+    </div>
+</div>
+
+<div class="container">
+  <section class="">
+    <input type="file" id="imageWechat" />
+
+  </section> 
+</div>
+
+<script src="/assets/js/jsQR.js"></script>
+<script>
+var imageWechat = document.getElementById('imageWechat');
+var _URL = window.URL || window.webkitURL;
+imageWechat.addEventListener('change', function(event) {
+  var file, img;
+  if ((file = this.files[0])) {
+      img = new Image();
+      img.onload = () => {
+        const canvas = document.createElement('canvas');
+        const context = canvas.getContext('2d');
+
+        canvas.width = img.width;
+        canvas.height = img.height;
+        context.drawImage(img, 0, 0);
+
+        try {
+          const imageData = context.getImageData(0, 0, img.width, img.height);
+
+          const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+          console.log(qrCode);
+        } catch (e) {
+          console.log(e);
+        }
+      };
+      img.src = _URL.createObjectURL(file);
+  }
+});
+</script>
+</body>
+</html>
