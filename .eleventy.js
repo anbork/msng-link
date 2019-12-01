@@ -16,6 +16,8 @@ module.exports = function(eleventyConfig) {
 
   eleventyConfig.addPlugin(svgContents);
 
+  eleventyConfig.addCollection("timestamp", () => new Date().getTime());
+
   eleventyConfig.addFilter('absoluteUrl', (url) => {
     if (url == "/") url = "";
     return `https://msng.link${url}`;
