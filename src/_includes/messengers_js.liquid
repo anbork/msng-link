@@ -35,8 +35,13 @@
 
   Object.keys(msngValues).forEach(function(msngSymbol) {
     var msngValue = msngValues[msngSymbol];
+    var link = messengers[msngSymbol].short_link;
+    if (!isMobile && messengers[msngSymbol].desktop_short_link) {
+      link = messengers[msngSymbol].desktop_short_link
+    }
+    var href = link.replace('{-}', msngValue);
     html += `
-      <a href="${ messengers[msngSymbol].short_link.replace('{-}', msngValue) }" class="d-inline-block my-2 mx-1" target="_blank">
+      <a href="${href}" class="d-inline-block my-2 mx-1" target="_blank">
         <small style="white-space:nowrap;">${ messengers[msngSymbol].name }</small><br />
         <svg width="50" height="50" class="${messengers[msngSymbol].slug}-bg">
           <use href="#${ messengers[msngSymbol].slug }" />

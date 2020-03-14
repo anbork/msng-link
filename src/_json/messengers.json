@@ -18,7 +18,7 @@
     "name": "Viber",
     "slug": "viber",
     "short": "vi",
-    "short_link": "viber://add?number={-}" ,
+    "short_link": "viber://add?number={-}",
     "desktop_short_link": "viber://chat?number={-}"
   },
   {
@@ -40,7 +40,8 @@
     "name": "Instagram",
     "slug": "instagram",
     "short": "ig",
-    "short_link": "instagram://user?username={-}" 
+    "short_link": "instagram://user?username={-}",
+    "desktop_short_link": "https://www.instagram.com/{-}"
   },
   {
     "inputType": "string",
