@@ -72,10 +72,10 @@
     "short_link": "line://ti/p/@{-}" 
   },
   {
-    "inputType": "string",
+    "inputType": "file",
     "name": "WeChat",
     "slug": "wechat",
     "short": "wc",
-    "short_link": "weixin://dl/chat?{-}"
+    "short_link": "/o/?{-}=wc"
   }
 ]

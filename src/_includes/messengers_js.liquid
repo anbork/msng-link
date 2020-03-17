@@ -1,3 +1,5 @@
+<script src="/assets/js/qrcode.min.js"></script>
+
 <script type="text/javascript">
   var messengersList = {{ messengers }};
   var messengers = {};
@@ -32,23 +34,40 @@
   }
   
   var html = "";
+  var href = null;
+  var isWechat = false;
 
-  Object.keys(msngValues).forEach(function(msngSymbol) {
-    var msngValue = msngValues[msngSymbol];
-    var link = messengers[msngSymbol].short_link;
-    if (!isMobile && messengers[msngSymbol].desktop_short_link) {
-      link = messengers[msngSymbol].desktop_short_link
-    }
-    var href = link.replace('{-}', msngValue);
+  if (Object.keys(msngValues).length == 1 && Object.keys(msngValues)[0] == "wc") {
+    isWechat = true;
+    href = decodeURIComponent(msngValues["wc"]);
+
     html += `
-      <a href="${href}" class="d-inline-block my-2 mx-1" target="_blank">
-        <small style="white-space:nowrap;">${ messengers[msngSymbol].name }</small><br />
-        <svg width="50" height="50" class="${messengers[msngSymbol].slug}-bg">
-          <use href="#${ messengers[msngSymbol].slug }" />
-        </svg>
-      </a>
+      <span class="d-inline-block my-2 mx-1" target="_blank">
+        <small style="white-space:nowrap;">${ messengers["wc"].name }</small><br />
+        <span id="wc-qr-code"></span>
+      </span>
     `
-  });
+  } 
+  else 
+  {
+    Object.keys(msngValues).forEach(function(msngSymbol) {
+      var msngValue = msngValues[msngSymbol];
+      var link = messengers[msngSymbol].short_link;
+      if (!isMobile && messengers[msngSymbol].desktop_short_link) {
+        link = messengers[msngSymbol].desktop_short_link
+      }
+      href = link.replace('{-}', msngValue);
+      html += `
+        <a href="${href}" class="d-inline-block my-2 mx-1" target="_blank">
+          <small style="white-space:nowrap;">${ messengers[msngSymbol].name }</small><br />
+          <svg width="50" height="50" class="${messengers[msngSymbol].slug}-bg">
+            <use href="#${ messengers[msngSymbol].slug }" />
+          </svg>
+        </a>
+      `
+    });
+  }
+
 
   if (html.length > 0) {
     var userLang = navigator.language || navigator.userLanguage;
@@ -68,6 +87,17 @@
         </div>
       </div>  
     `;
+
+    if (isWechat) {
+      var qrcode = new QRCode(document.getElementById('wc-qr-code'), {
+          text: href,
+          width: 228,
+          height: 228,
+          colorDark : "#000000",
+          colorLight : "#ffffff",
+          correctLevel : QRCode.CorrectLevel.H
+      });  
+    }     
   } else {
     var gglHeader = contentWrapper = document.getElementById('ggl-header');
     var isHome = contentWrapper = document.getElementById('is-home');

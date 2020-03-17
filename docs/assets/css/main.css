@@ -255,3 +255,7 @@ body {
         opacity: 1;
     }
 }
+
+.form-control-file {
+    margin: 5px 0 20px;
+}

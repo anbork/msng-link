@@ -64,7 +64,7 @@
     "description": "Вы можете сделать простую ссылку для LINE или сгенерировать HTML-код для вашего сайта."
   },
   "wechat": {
-    "title": "Генератор ссылок для WeChat",
+    "title": "Генератор ссылок для WeChat с QR Code",
     "description": "Вы можете сделать простую ссылку для WeChat или сгенерировать HTML-код для вашего сайта."
   },
   "all_pages": {
@@ -93,8 +93,8 @@
       "imageLink": "Напишите мне в LINE"
     },
     "wechat": {
-      "label": "Введите ваш WeChat ID",
-      "placeholder": "WeChat ID из приложения",
+      "label": "Введите ваш WeChat QR Code",
+      "placeholder": "WeChat QR Code из приложения",
       "result": "Вот ссылка на ваш аккаунт в WeChat, скопируйте ее и используйте где угодно.",
       "imageLink": "Напишите мне в WeChat"
     },

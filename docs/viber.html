@@ -4,7 +4,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-<link rel="stylesheet" href="/assets/css/main.css?v=1584222752024">
+<link rel="stylesheet" href="/assets/css/main.css?v=1584481147653">
 <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicons/favicon-16x16.png">
 <title>Viber Link Generator</title>
@@ -56,6 +56,30 @@
 
 <div class="container">
   <section class="">
+
+    <div class="messenger-container py-3">
+      <messenger type="viber">
+        <div class="form-group">
+            <label>Enter your Viber phone number (only digits)</label>
+            <div class="form-row">
+                <div class="col">
+                    <input type="number" name="messenger" class="{messenger.type == 'wechat' ? 'form-control-file' : 'form-control'}" placeholder="For example: 15417543010" onchange={changeHandle} />
+                </div>
+                <div class="col-auto">
+                    <button class="btn btn-primary">
+                        <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
+                    </button>
+                </div>
+            </div>       
+            <small class="form-text text-muted"></small> 
+        </div>    
+      </messenger>
+    </div>
+
+    <div class="text-center mb-3">
+      <p class="lead">You can create a simple Viber link or generate HTML code for your website.</p>
+    </div>
+
     <div class="messenger-container">
 <div class="row mb-3 justify-content-center messengers-menu">
   
@@ -246,28 +270,6 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 </div> 
 </div>
 
-    <div class="messenger-container">
-      <messenger type="viber">
-        <div class="form-group">
-            <label>Enter your Viber phone number (only digits)</label>
-            <div class="form-row">
-                <div class="col">
-                    <input type="number" name="messenger" class="form-control" placeholder="For example: 15417543010" onchange={changeHandle} />
-                </div>
-                <div class="col-auto">
-                    <button class="btn btn-primary">
-                        <svg width="14" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="#fff" d="M285.476 272.971L91.132 467.314c-9.373 9.373-24.569 9.373-33.941 0l-22.667-22.667c-9.357-9.357-9.375-24.522-.04-33.901L188.505 256 34.484 101.255c-9.335-9.379-9.317-24.544.04-33.901l22.667-22.667c9.373-9.373 24.569-9.373 33.941 0L285.475 239.03c9.373 9.372 9.373 24.568.001 33.941z"></path></svg>
-                    </button>
-                </div>
-            </div>       
-            <small class="form-text text-muted"></small> 
-        </div>    
-      </messenger>
-    </div>
-
-    <div class="text-center mt-4">
-      <p class="lead">You can create a simple Viber link or generate HTML code for your website.</p>
-    </div>
   </section>
 </div>
 
@@ -280,7 +282,8 @@ fill="#00B900"/><path d="m443 231c-2 45-21 76-51 103-53 47-137 105-148 96-11-14 
 </script>
 
 <script src="/assets/js/clipboard.min.js"></script>
-<script type="riot/tag" src="/assets/js/messenger.tag?v=1584222752024"></script>
+
+<script type="riot/tag" src="/assets/js/messenger.tag?v=1584481147653"></script>
 <!-- include riot.js -->
 <script src="/assets/js/riot-compiler.min.js"></script>
 <!-- mount the tag -->

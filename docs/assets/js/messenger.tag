@@ -22,17 +22,47 @@
     this.messenger = window.translations;
     this.messenger.type = this.opts.type;
     var clipboard = new ClipboardJS('#btn-copy');
-
     clipboard.on('success', function(e) {
         document.getElementById('btn-copy').className = "btn btn-success";
     });
 
     this.changeHandle = (event) => {
-      this.messenger.value = event.target.value
-      if (this.messenger.value) {
-        this.messenger.openLink = window.location.origin + "/o/?" + this.messenger.value + "=" + this.messenger.short;
-      }
-      this.messenger.htmlLink = `<a href="${this.messenger.openLink}">${this.messenger.imageLink}</a>`      
+      if (this.messenger.type == 'wechat') {
+        var file, img;
+        if ((file = event.target.files[0])) {
+          img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+
+            canvas.width = img.width;
+            canvas.height = img.height;
+            context.drawImage(img, 0, 0);
+
+            try {
+              const imageData = context.getImageData(0, 0, img.width, img.height);
+
+              const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+              this.messenger.value = encodeURIComponent(qrCode.data);
+              if (this.messenger.value) {
+                this.messenger.openLink = window.location.origin + "/o/?" + this.messenger.value + "=" + this.messenger.short;
+              }
+              this.messenger.htmlLink = `<a href="${this.messenger.openLink}">${this.messenger.imageLink}</a>`;
+              this.update();
+            } catch (e) {
+              console.log(e);
+            }
+          };
+          var _URL = window.URL || window.webkitURL;
+          img.src = _URL.createObjectURL(file);
+        }
+      } else {
+        this.messenger.value = event.target.value
+        if (this.messenger.value) {
+          this.messenger.openLink = window.location.origin + "/o/?" + this.messenger.value + "=" + this.messenger.short;
+        }
+        this.messenger.htmlLink = `<a href="${this.messenger.openLink}">${this.messenger.imageLink}</a>`
+      }      
     }
   </script>
 </messenger>

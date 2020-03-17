@@ -95,10 +95,41 @@
     
     this.shorts = {};
     this.changeHandle = (event) => {
-      this.shorts[event.target.name] = event.target.value
-      if (!event.target.value || event.target.value.length == 0) {
-        delete this.shorts[event.target.name];
+
+      if (event.target.name == 'wc') {
+
+        var file, img;
+        if ((file = event.target.files[0])) {
+          img = new Image();
+          img.onload = () => {
+            const canvas = document.createElement('canvas');
+            const context = canvas.getContext('2d');
+
+            canvas.width = img.width;
+            canvas.height = img.height;
+            context.drawImage(img, 0, 0);
+
+            try {
+              const imageData = context.getImageData(0, 0, img.width, img.height);
+
+              const qrCode = jsQR(imageData.data, imageData.width, imageData.height);
+              this.shorts[event.target.name] = encodeURIComponent(qrCode.data);
+
+            } catch (e) {
+              console.log(e);
+            }
+          };
+          var _URL = window.URL || window.webkitURL;
+          img.src = _URL.createObjectURL(file);
+        }
+      } else {
+
+        this.shorts[event.target.name] = event.target.value
+        if (!event.target.value || event.target.value.length == 0) {
+          delete this.shorts[event.target.name];
+        }
       }
+
     }
 
 

@@ -94,8 +94,8 @@
       "imageLink": "Envíame un mensaje en LINE"
     },
     "wechat": {
-      "label": "Introducir tu usuario de WeChat",
-      "placeholder": "Tu usuario de WeChat",
+      "label": "Introducir tu usuario de WeChat QR Code",
+      "placeholder": "Tu usuario de WeChat QR Code",
       "result": "Aquí esta tu link para WeChat, cópialo y úsalo donde quieras",
       "imageLink": "Envíame un mensaje en WeChat"
     },

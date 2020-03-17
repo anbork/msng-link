@@ -69,7 +69,7 @@
     "description": "You can create a simple Line link or generate HTML code for your website."
   },
   "wechat": {
-    "title": "WeChat Link Generator",
+    "title": "WeChat Link Generator with QR Code",
     "description": "You can create a simple WeChat link or generate HTML code for your website."
   },
   "all_pages": {
@@ -98,8 +98,8 @@
       "imageLink": "Message me on LINE"
     },
     "wechat": {
-      "label": "Enter your WeChat ID",
-      "placeholder": "Your WeChat ID",
+      "label": "Enter your WeChat QR Code",
+      "placeholder": "Your WeChat QR Code",
       "result": "Here is your link for WeChat, copy it and use where you want",
       "imageLink": "Message me on WeChat"
     },

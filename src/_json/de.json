@@ -93,8 +93,8 @@
       "imageLink": "Texten Sie mich auf LINE an!"
     },
     "wechat": {
-      "label": "Geben Sie Ihre WeChat-ID ein",
-      "placeholder": "Ihre WeChat-ID",
+      "label": "Geben Sie Ihre WeChat QR Code ein",
+      "placeholder": "Ihre WeChat QR Code",
       "result": "Hier ist Ihr Link für WeChat - einfach kopieren und nutzen, wo Sie wollen",
       "imageLink": "Texten Sie mich auf WeChat an!"
     },
